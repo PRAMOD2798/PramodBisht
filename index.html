@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Java Developer Portfolio">
+    <title>My Java Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 50px 0;
+        }
+        header h1 {
+            margin: 0;
+        }
+        section {
+            padding: 30px;
+            margin: 20px 0;
+        }
+        h2 {
+            font-size: 2rem;
+            color: #333;
+        }
+        .media-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .media-item {
+            border-radius: 8px;
+            overflow: hidden;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .media-item img, .media-item video {
+            width: 100%;
+            height: auto;
+        }
+        .media-item video {
+            border: none;
+        }
+        .video-section {
+            margin-top: 40px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to My Java Developer Portfolio</h1>
+        <p>Explore my projects, skills, and videos.</p>
+    </header>
+
+    <!-- About Me Section -->
+    <section>
+        <h2>About Me</h2>
+        <p>Hi! I'm a passionate Java Developer with experience in building high-quality applications. I specialize in backend development, databases, and creating scalable solutions. Below are some of my recent projects and videos showcasing my work.</p>
+    </section>
+
+    <!-- Projects and Media Gallery Section -->
+    <section>
+        <h2>Projects & Media Gallery</h2>
+        <div class="media-gallery">
+            <div class="media-item">
+                <img src="assets/project1.jpg" alt="Project 1">
+                <div class="caption">Project 1 - Description of the project.</div>
+            </div>
+            <div class="media-item">
+                <img src="assets/project2.jpg" alt="Project 2">
+                <div class="caption">Project 2 - Description of the project.</div>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section">
+        <h2>Videos</h2>
+        <div class="media-gallery">
+            <div class="media-item">
+                <video controls>
+                    <source src="assets/demo_video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="caption">Java Project Demo - How I build scalable solutions.</div>
+            </div>
+            <div class="media-item">
+                <video controls>
+                    <source src="assets/tutorial_video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="caption">Java Tutorial - Step-by-step guide to building applications.</div>
+            </div>
+            <!-- Add more videos as needed -->
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 My Portfolio | Designed by Me</p>
+    </footer>
+
+</body>
+</html>
