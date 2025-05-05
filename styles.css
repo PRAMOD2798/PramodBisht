@@ -15,6 +15,7 @@ body {
 
 /* Header */
 header {
+    position: relative;
     text-align: center;
     margin-bottom: 30px;
 }
@@ -23,16 +24,34 @@ header {
     position: relative;
 }
 
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: -1;
+}
+
 .profile-photo {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     border: 4px solid #fff;
     transition: transform 0.3s ease-in-out;
+    z-index: 1;
 }
 
 .profile-photo:hover {
     transform: scale(1.1);
+}
+
+h1 {
+    font-size: 36px;
+    color: #fff;
+    margin-top: 10px;
 }
 
 /* About Me Section */
@@ -66,18 +85,26 @@ header {
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
+    animation: fadeIn 2s ease-out;
 }
 
-.photo-gallery img {
+.photo-container {
+    overflow: hidden;
     width: 200px;
     height: 200px;
-    object-fit: cover;
     border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.photo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     transition: transform 0.3s ease-in-out;
 }
 
-.photo-gallery img:hover {
-    transform: scale(1.05);
+.photo-container img:hover {
+    transform: scale(1.1);
 }
 
 /* Video Section */
@@ -91,10 +118,24 @@ header {
     margin-bottom: 20px;
 }
 
-video {
-    width: 80%;
-    max-width: 600px;
+.video-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.video-container {
+    width: 300px;
+    height: 170px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    overflow: hidden;
+}
+
+video {
+    width: 100%;
+    height: 100%;
 }
 
 /* Footer */
@@ -110,4 +151,16 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
