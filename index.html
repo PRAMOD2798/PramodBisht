@@ -1,72 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Java Developer Portfolio">
-    <title>My Animated Java Developer Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Java Developer Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- Header Section with Parallax Effect -->
-    <header>
-        <div class="profile-photo-container">
-            <img src="assets/IMG_3641.jpg" alt="Your Name" class="profile-photo">
-        </div>
-        <div class="parallax">
-            <h1 class="fadeIn">Welcome to My Java Developer Portfolio</h1>
-            <p class="fadeIn">Explore my projects, skills, and videos.</p>
-        </div>
-    </header>
+  <!-- Hero Section -->
+  <header>
+    <img src="your-profile.jpg" alt="Profile Photo" class="profile-img" />
+    <h1>Your Name</h1>
+    <p>Java Developer | Spring Boot | Full Stack Enthusiast</p>
+  </header>
 
-    <!-- About Me Section -->
-    <section class="fadeIn">
-        <h2>About Me</h2>
-        <p>Hi! I'm a passionate Java Developer with experience in building high-quality applications. I specialize in backend development, databases, and creating scalable solutions. Below are some of my recent projects and videos showcasing my work.</p>
-    </section>
+  <!-- About Me -->
+  <section data-aos="fade-up">
+    <h2>About Me</h2>
+    <p style="text-align:center; max-width:800px; margin:auto;">
+      I am a passionate Java developer with experience building scalable web applications using Spring Boot, Hibernate, and RESTful APIs.
+    </p>
+    <div class="skills">
+      <span>Java</span>
+      <span>Spring Boot</span>
+      <span>REST API</span>
+      <span>MySQL</span>
+      <span>JavaScript</span>
+      <span>React</span>
+    </div>
+  </section>
 
-    <!-- Projects and Media Gallery Section -->
-    <section class="fadeIn">
-        <h2>Projects & Media Gallery</h2>
-        <div class="media-gallery">
-            <div class="media-item">
-                <img src="assets/project1.jpg" alt="Project 1" class="zoomIn">
-                <div class="caption">Project 1 - Description of the project.</div>
-            </div>
-            <div class="media-item">
-                <img src="assets/project2.jpg" alt="Project 2" class="zoomIn">
-                <div class="caption">Project 2 - Description of the project.</div>
-            </div>
-        </div>
-    </section>
+  <!-- Photo Gallery -->
+  <section data-aos="zoom-in">
+    <h2>Photo Gallery</h2>
+    <div class="gallery">
+      <img src="photo1.jpg" alt="Project 1" />
+      <img src="photo2.jpg" alt="Project 2" />
+      <img src="photo3.jpg" alt="Project 3" />
+    </div>
+  </section>
 
-    <!-- Video Section -->
-    <section class="video-section fadeIn">
-        <h2>Videos</h2>
-        <div class="media-gallery">
-            <div class="media-item">
-                <video controls>
-                    <source src="assets/demo_video.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <div class="caption">Java Project Demo - How I build scalable solutions.</div>
-            </div>
-            <div class="media-item">
-                <video controls>
-                    <source src="assets/tutorial_video.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <div class="caption">Java Tutorial - Step-by-step guide to building applications.</div>
-            </div>
-        </div>
-    </section>
+  <!-- Video Section -->
+  <section data-aos="fade-right">
+    <h2>Video Showcase</h2>
+    <div class="videos">
+      <video controls>
+        <source src="video1.mp4" type="video/mp4">
+      </video>
+      <video controls>
+        <source src="video2.mp4" type="video/mp4">
+      </video>
+    </div>
+  </section>
 
-    <!-- Footer Section -->
-    <footer class="fadeIn">
-        <p>&copy; 2025 My Portfolio | Designed by Me</p>
-    </footer>
+  <!-- Projects -->
+  <section data-aos="fade-left">
+    <h2>My Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Student Management System</h3>
+        <p>Built with Spring Boot, Thymeleaf, and MySQL.</p>
+        <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
+      </div>
+      <div class="card">
+        <h3>Task Tracker API</h3>
+        <p>RESTful API for managing tasks with JWT security.</p>
+        <a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a>
+      </div>
+    </div>
+  </section>
 
-    <script src="scripts.js"></script>
+  <!-- Contact -->
+  <div class="contact" data-aos="fade-up">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:your@email.com">your@email.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+  </div>
+
+  <!-- AOS Animation Library -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="scripts.js"></script>
 </body>
 </html>
