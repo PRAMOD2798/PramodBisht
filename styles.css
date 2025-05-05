@@ -143,3 +143,9 @@ video:hover {
         width: 100%;
     }
 }
+/* Trigger the fade-in when element is visible */
+.fadeIn.visible {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
