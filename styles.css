@@ -148,4 +148,12 @@ video:hover {
     opacity: 1;
     transition: opacity 1s ease-in-out;
 }
+.profile-photo {
+    width: 150px;           /* Adjust size as needed */
+    height: 150px;
+    object-fit: cover;      /* Ensures the image covers the round shape */
+    border-radius: 50%;     /* Makes it round */
+    border: 3px solid #fff; /* Optional: white border */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* Optional: adds shadow */
+}
 
