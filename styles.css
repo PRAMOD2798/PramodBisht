@@ -156,4 +156,10 @@ video:hover {
     border: 3px solid #fff; /* Optional: white border */
     box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* Optional: adds shadow */
 }
+.profile-photo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
 
